@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to right, #ffe000, #799f0c);
+}
+.container{
+    width: 400px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 10PX;
+    overflow: hidden;
+}
+form{
+    border-bottom: 1px solid #aaa;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+form input{
+    width: 100%;
+    font-size: 22px;
+    margin-right: 10px;
+    border: none;
+    outline: none;    
+}
+form button{
+    background: yellowgreen;
+    padding: 5px 15px;
+    color: #fff;
+    border: navajowhite;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo{
+    list-style: none;
+    
+}
+.todo li{
+    font-size: 22px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+.todo li span{
+    /* ẩn các mục quá dài */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+}
+li.completed span{
+    color: #aaa;
+    text-decoration: line-through;
+}
