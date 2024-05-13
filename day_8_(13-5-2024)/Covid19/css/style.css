@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary--color--pinkred: #eb5757;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.row{
+    width: 100%;
+    margin: 0 -15px 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* announcement */
+.announcement{
+    position: relative;
+    padding: 25px;
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+.announcement .row{
+    justify-content: center;
+}
+.announcement a{
+    padding: 5px 20px;
+    border-radius: 50px;
+    background-color: var(--primary--color--pinkred); 
+    color: white;
+    margin-right: 20px;
+}
+.announcement i{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
+/* Banner */
+.banners{
+    display: flex;
+    align-items: center;
+    min-height: 550px;
+    background: no-repeat center/cover;
+    color: white;
+    margin-bottom: 50px;
+}
+.banner__text-left{
+    text-align: left;
+}
+.banner__text-right{
+    text-align: right;
+}
+.banners h1{
+    font-size: 55px;
+}
+.banners button{
+    padding: 5px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+}
+
+.btn-1{
+    background: none;
+    color: white;
+}
+.btn-1:hover{
+    background: white;
+    color: black;
+}
+.btn-2{
+
+}
+.btn-2:hover{
+    background: var(--primary--color--pinkred);
+    color: white;
+    border: 1px solid var(--primary--color--pinkred);
+}
+
+/* Sections */
+section h2 {
+    font-size: 40px;
+}
+
+@media (min-width: 1024px){
+    .container {
+        width: 1000px;
+    }
+    .col-lg-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }   
+    .col-lg-4{
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    } 
+}
+
+@media (max-width: 1023px){
+    .container{
+        min-width: 768px;
+    }
+    .col-md-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

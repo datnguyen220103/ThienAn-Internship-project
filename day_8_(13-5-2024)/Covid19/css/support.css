@@ -1,0 +1,49 @@
+
+.support {
+    padding: 20px 0;
+}
+
+
+.support .support__list{
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.support__item{
+    padding: 15px;
+}
+
+.support__box{
+    height: 330px;
+    background: #222222;
+    color: white;
+    font-size: 40px;
+    position: relative;
+    padding: 90px 45px;
+    margin-bottom: 45px;
+    overflow: hidden;
+}
+
+.support__box h3{
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+.support__box span{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-weight: 500;
+}
+
+.support__box img{
+    position: absolute;
+    right: -70px;
+    bottom: -70px;
+}
+.support p{
+    text-align: justify;
+}
