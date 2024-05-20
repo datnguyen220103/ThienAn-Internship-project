@@ -1,0 +1,156 @@
+/* SECTION */
+section {
+    padding: 30px 0 80px 0;
+    position: relative;
+}
+
+.section-header{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 40px;
+    font-weight: 500;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.slide-wrapper{
+    padding: 30px 0;
+}
+
+.company-logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.company-logo img{
+    width: 25%;
+    margin: 0 20px;
+}
+
+.slide-content{
+    margin: 30px 0;
+    padding-top: 40px ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 300px;;
+}
+
+.slide-inner{
+    width: 350px;
+    text-align: center;
+    transition: 0.3s;
+    position: absolute; 
+    opacity: 0;
+}
+
+.slide-inner img{
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.img-small{
+    height: 80px;
+    padding-top: 20px;
+}
+
+.appear{
+    opacity: 1;
+}
+
+.section-header h2{
+    margin-bottom: 20px;
+}
+
+.section-header button{
+    color: #780000;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+
+/* img left */
+.img-left{
+    position: absolute;
+    left: -220px;
+    top: 0;
+    width: 600px;
+    z-index: 0;
+}
+.img-left + h2{
+    z-index: 1;
+    position: relative;
+}
+
+/* faqs */
+.faqs{
+    position: relative;
+    z-index: 1;
+}
+
+.faq__item{
+    margin-bottom: 20px;
+}
+
+.faq__title{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgba(158, 31, 25, .2);
+    cursor: pointer;
+
+}
+
+.faq__title h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.faq__title i{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.faq__inner{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.faq__content{
+    padding: 20px 10px;
+}
+
+.faq__inner p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.faq__content a{
+    color: #9e1f19;
+    text-decoration: underline;
+}
+
+.list-img{
+    position: absolute;
+    right: -300px;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.list-img img{
+    width: 700px;
+    height: 700px;
+}
+
+.faq__inner.expanded {
+    height: 150px;
+}
