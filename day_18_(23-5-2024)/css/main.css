@@ -1,0 +1,74 @@
+/* MAIN */
+
+.banner-wrapper{
+    width: 100%;
+    min-height: 650px;
+    position: relative;
+}
+
+.banner__img{
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/banner1.jpg);
+    object-fit: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.banner__img h1{
+    font-size: 50px;
+    color: white;
+}
+
+.dashboard-wrapper{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 410px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.dashboard__text{
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 15px 20px;
+    text-align: center;
+    background-color: var(--blue);
+    color: white;
+}
+
+.dashboard__text span{
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.dashboard__text p{
+    font-size: 20px;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+.dashboard-wrapper button{
+    padding: 5px 0;
+    font-size: 20px;
+    color: white;
+    background: var(--dark);
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.dashboard-wrapper button i{
+    margin: 0 10px;
+}
+
+#btn-prev{
+    grid-area: 2 / 1 / 2 / 2;
+}
+
+#btn-next {
+    grid-area: 2 / 2 / 2 / 2;
+}
